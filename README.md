@@ -1,94 +1,135 @@
-# Daily Companion
+# 🌙 Daily Companion
 
-A mindful productivity companion built with Tauri, React, and TypeScript.
+> **Today is enough. Save Progress. Tomorrow we continue.**
 
-## Description
+Daily Companion is a calm, offline-first desktop application designed to help users reflect on their day, capture meaningful moments, and end each day with peace.
 
-Daily Companion is a desktop application designed to help you organize your daily life with intention — not just productivity for productivity's sake. It combines task management, habit tracking, journaling, and planning into a single, privacy-first application that runs natively on your machine.
+Unlike traditional productivity apps, Daily Companion focuses on mindfulness rather than maximizing productivity.
 
-## Core Philosophy
+---
 
-- **Mindful over Mechanical** — Productivity should serve your well-being, not the other way around.
-- **Privacy-First** — Your data stays on your machine. No cloud dependency, no data mining.
-- **Local by Default** — Built on Tauri and SQLite. Everything runs locally with no internet required.
-- **Progressive Enhancement** — Start simple, grow into advanced features at your own pace.
-- **Keyboard-First** — Designed for speed and efficiency without sacrificing clarity.
+## Philosophy
+
+Daily Companion is built around one simple belief:
+
+> **Today is enough.**
+
+It helps users:
+
+- Reflect on their day
+- Save daily progress
+- Capture meaningful thoughts
+- Build healthy habits
+- Prepare for tomorrow without pressure
+
+---
+
+## Project Status
+
+Version: **0.1.0-alpha**
+
+Current Sprint:
+
+- Sprint 1 — Foundation (In Progress)
+
+---
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Desktop Shell | Tauri 2.x |
-| Frontend | React 19 |
-| Language | TypeScript |
-| Bundler | Vite |
-| Package Manager | pnpm |
-| Styling | CSS |
+Desktop
+
+- Tauri v2
+- Rust
+
+Frontend
+
+- React
+- TypeScript
+- Vite
+
+UI
+
+- Tailwind CSS v4
+- shadcn/ui
+- Motion
+- Lucide React
+
+State Management
+
+- Zustand
+
+Database
+
+- SQLite
+- Drizzle ORM
+
+Utilities
+
+- React Hook Form
+- Zod
+- date-fns
+
+---
+
+## Architecture
+
+The project follows:
+
+- Feature-based Architecture
+- Clean Architecture
+- SOLID Principles
+- Offline First
+- Performance First
+- TypeScript Strict
+
+---
 
 ## Project Structure
 
 ```
 daily-companion/
-├── src/                  # React application source
-│   ├── App.tsx
-│   ├── App.css
-│   └── main.tsx
-├── src-tauri/            # Tauri (Rust) backend
-│   ├── src/
-│   │   ├── lib.rs
-│   │   └── main.rs
-│   ├── Cargo.toml
-│   └── tauri.conf.json
-├── public/               # Static assets
+├── src/               # React application
+├── src-tauri/         # Tauri (Rust) backend
+├── public/            # Static assets
 ├── index.html
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
-├── .editorconfig
-├── .gitattributes
-├── .gitignore
 └── LICENSE
 ```
 
-## Development Workflow
-
-```bash
-# Install dependencies
-pnpm install
-
-# Start the development server with Tauri window
-pnpm tauri dev
-
-# Build for production
-pnpm tauri build
-```
+---
 
 ## Roadmap
 
-| Sprint | Theme | Focus |
-|--------|-------|-------|
-| Sprint 1 | Foundation | Repository standards, project setup, CI |
-| Sprint 2 | Shell | App shell, sidebar, routing, theme system |
-| Sprint 3 | Tasks | Task list CRUD, filtering, due dates |
-| Sprint 4 | Habits | Habit tracking, streaks, check-in system |
-| Sprint 5 | Journal | Daily journal, markdown editor, entries |
-| Sprint 6 | Dashboard | Home dashboard, widgets, weekly review |
-| Sprint 7 | Data | SQLite, persistence, import/export |
-| Sprint 8 | Sync | Optional sync layer, backup, restore |
-| Sprint 9 | Polish | Animations, accessibility, performance |
-| Sprint 10 | Ship | Testing, packaging, store submission |
+Sprint 1 — Foundation
+
+Sprint 2 — Journal & Reflection
+
+Sprint 3 — Save Progress
+
+Sprint 4 — Reminder
+
+Sprint 5 — Mood Tracker
+
+Sprint 6 — Statistics
+
+Sprint 7 — Insight Engine
+
+Sprint 8 — Timeline & Search
+
+Sprint 9 — Backup & Export
+
+Sprint 10 — Polish & Release Candidate
+
+---
 
 ## Getting Started
 
-> **Note:** This section will be expanded once the first stable prototype is available.
+*Coming soon.*
 
-To run the project locally:
-
-1. Ensure you have Rust, Node.js, and pnpm installed.
-2. Clone the repository.
-3. Run `pnpm install` to install dependencies.
-4. Run `pnpm tauri dev` to launch the application.
+---
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+MIT License
